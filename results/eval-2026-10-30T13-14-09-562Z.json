@@ -1,0 +1,218 @@
+{
+  "dataset": "data/seed.json",
+  "engine": "stub",
+  "at": "2026-10-30T13:14:09.563Z",
+  "results": {
+    "trustlensHighPlus": {
+      "tp": 6,
+      "fp": 0,
+      "tn": 4,
+      "fn": 0,
+      "accuracy": 1,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "trustlensCautionPlus": {
+      "tp": 6,
+      "fp": 0,
+      "tn": 4,
+      "fn": 0,
+      "accuracy": 1,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "baseline": {
+      "tp": 6,
+      "fp": 2,
+      "tn": 2,
+      "fn": 0,
+      "accuracy": 0.8,
+      "precision": 0.75,
+      "recall": 1,
+      "f1": 0.8571428571428571
+    }
+  },
+  "perLevel": {
+    "safe": {
+      "precision": 1,
+      "recall": 1,
+      "predicted": 4,
+      "actual": 4
+    },
+    "caution": {
+      "precision": null,
+      "recall": null,
+      "predicted": 0,
+      "actual": 0
+    },
+    "high": {
+      "precision": 1,
+      "recall": 1,
+      "predicted": 1,
+      "actual": 1
+    },
+    "critical": {
+      "precision": 1,
+      "recall": 1,
+      "predicted": 5,
+      "actual": 5
+    }
+  },
+  "exactLevelMatch": 1,
+  "byLang": {
+    "en": {
+      "n": 6,
+      "accuracy": 1
+    },
+    "kn": {
+      "n": 2,
+      "accuracy": 1
+    },
+    "kanglish": {
+      "n": 2,
+      "accuracy": 1
+    }
+  },
+  "rows": [
+    {
+      "id": "en-kyc-001",
+      "lang": "en",
+      "label": "scam",
+      "expectedLevel": "critical",
+      "level": "critical",
+      "score": 100,
+      "signals": [
+        "otp_request",
+        "kyc_update",
+        "urgency",
+        "threat",
+        "dangerous_link",
+        "bank_from_mobile",
+        "org_link_mismatch"
+      ],
+      "baselineFlagged": true
+    },
+    {
+      "id": "en-normal-otp-001",
+      "lang": "en",
+      "label": "normal",
+      "expectedLevel": "safe",
+      "level": "safe",
+      "score": 0,
+      "signals": [],
+      "baselineFlagged": true
+    },
+    {
+      "id": "kn-kyc-001",
+      "lang": "kn",
+      "label": "scam",
+      "expectedLevel": "critical",
+      "level": "critical",
+      "score": 100,
+      "signals": [
+        "otp_request",
+        "kyc_update",
+        "urgency",
+        "threat",
+        "dangerous_link",
+        "bank_from_mobile",
+        "org_link_mismatch"
+      ],
+      "baselineFlagged": true
+    },
+    {
+      "id": "kanglish-bescom-001",
+      "lang": "kanglish",
+      "label": "scam",
+      "expectedLevel": "high",
+      "level": "high",
+      "score": 72,
+      "signals": [
+        "urgency",
+        "threat",
+        "money_request",
+        "bank_from_mobile"
+      ],
+      "baselineFlagged": true
+    },
+    {
+      "id": "en-courier-001",
+      "lang": "en",
+      "label": "scam",
+      "expectedLevel": "critical",
+      "level": "critical",
+      "score": 100,
+      "signals": [
+        "urgency",
+        "money_request",
+        "dangerous_link",
+        "bank_from_mobile",
+        "org_link_mismatch"
+      ],
+      "baselineFlagged": true
+    },
+    {
+      "id": "en-police-001",
+      "lang": "en",
+      "label": "scam",
+      "expectedLevel": "critical",
+      "level": "critical",
+      "score": 100,
+      "signals": [
+        "urgency",
+        "digital_arrest",
+        "money_request",
+        "bank_from_mobile"
+      ],
+      "baselineFlagged": true
+    },
+    {
+      "id": "en-normal-amazon-001",
+      "lang": "en",
+      "label": "normal",
+      "expectedLevel": "safe",
+      "level": "safe",
+      "score": 0,
+      "signals": [],
+      "baselineFlagged": false
+    },
+    {
+      "id": "kanglish-normal-001",
+      "lang": "kanglish",
+      "label": "normal",
+      "expectedLevel": "safe",
+      "level": "safe",
+      "score": 0,
+      "signals": [],
+      "baselineFlagged": true
+    },
+    {
+      "id": "kn-normal-bescom-001",
+      "lang": "kn",
+      "label": "normal",
+      "expectedLevel": "safe",
+      "level": "safe",
+      "score": 0,
+      "signals": [],
+      "baselineFlagged": false
+    },
+    {
+      "id": "en-job-001",
+      "lang": "en",
+      "label": "scam",
+      "expectedLevel": "critical",
+      "level": "critical",
+      "score": 97,
+      "signals": [
+        "urgency",
+        "money_request",
+        "too_good",
+        "brand_from_freemail",
+        "reply_to_mismatch"
+      ],
+      "baselineFlagged": true
+    }
+  ]
+}

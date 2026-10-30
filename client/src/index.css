@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Inter for Latin, Noto Sans Kannada picks up Kannada glyphs. Both bundled via @fontsource (offline). */
+  --font-sans: 'Inter', 'Noto Sans Kannada', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+}
+
+/* Highlight flash when a warning is clicked */
+@keyframes tl-flash {
+  0%, 100% { box-shadow: 0 0 0 0 transparent; }
+  30%, 70% { box-shadow: 0 0 0 4px rgb(99 102 241 / 0.75); }
+}
+.tl-flash {
+  animation: tl-flash 1.2s ease-in-out 1;
+}
+
+@keyframes tl-rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+.tl-rise {
+  animation: tl-rise 0.28s ease-out both;
+}
+
+.tl-fade-out {
+  transition: opacity 0.6s ease, transform 0.6s ease, max-height 0.6s ease;
+  opacity: 0;
+  transform: translateX(12px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

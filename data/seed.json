@@ -1,0 +1,100 @@
+[
+  {
+    "id": "en-kyc-001",
+    "type": "sms",
+    "sender": "+91 98765 43210",
+    "text": "Dear Customer, your SBI YONO account will be BLOCKED today. Update your PAN/KYC immediately at http://sbi-kyc-verify.xyz/login and share the OTP sent to you to avoid suspension.",
+    "lang": "en",
+    "label": "scam",
+    "scamType": "kyc",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "en-normal-otp-001",
+    "type": "sms",
+    "sender": "VM-SBIINB",
+    "text": "482913 is the OTP for your SBI YONO login. Valid for 5 minutes. Do not share it with anyone. SBI never asks for your OTP, PIN or password. -SBI",
+    "lang": "en",
+    "label": "normal",
+    "expectedLevel": "safe"
+  },
+  {
+    "id": "kn-kyc-001",
+    "type": "sms",
+    "sender": "+91 87654 32109",
+    "text": "ಆತ್ಮೀಯ ಗ್ರಾಹಕರೇ, ನಿಮ್ಮ SBI ಖಾತೆ ಇಂದು ಬ್ಲಾಕ್ ಆಗುತ್ತದೆ. ತಕ್ಷಣ KYC ಅಪ್ಡೇಟ್ ಮಾಡಿ: http://sbi-kyc.top/update ನಂತರ ನಿಮಗೆ ಬಂದ OTP ಅನ್ನು 9876543210 ಸಂಖ್ಯೆಗೆ ತಿಳಿಸಿ.",
+    "lang": "kn",
+    "label": "scam",
+    "scamType": "kyc",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "kanglish-bescom-001",
+    "type": "sms",
+    "sender": "+91 90080 12345",
+    "text": "Namaskara, nimma BESCOM current bill pending ide. Ivattu ratri 9:30 ge power cut aagutte. Takshana 9876543210 ge call maadi illa bill pay maadi.",
+    "lang": "kanglish",
+    "label": "scam",
+    "scamType": "electricity",
+    "expectedLevel": "high"
+  },
+  {
+    "id": "en-courier-001",
+    "type": "sms",
+    "sender": "+44 7911 123456",
+    "text": "India Post: Your parcel is on hold at our warehouse due to an incomplete address. Pay Rs 25 redelivery fee within 12 hours or it will be returned: https://indiapost-redelivery.top/pay",
+    "lang": "en",
+    "label": "scam",
+    "scamType": "courier",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "en-police-001",
+    "type": "sms",
+    "sender": "+91 76543 21098",
+    "text": "This is CBI Cyber Cell. A parcel in your name contains illegal drugs. You are under digital arrest. Do not tell anyone. Transfer Rs 95,000 to the verification account immediately or face arrest.",
+    "lang": "en",
+    "label": "scam",
+    "scamType": "fake_police",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "en-normal-amazon-001",
+    "type": "sms",
+    "sender": "AX-AMAZON",
+    "text": "Your Amazon order of 'boAt Airdopes 141' has been delivered. Track or return it at https://www.amazon.in/your-orders",
+    "lang": "en",
+    "label": "normal",
+    "expectedLevel": "safe"
+  },
+  {
+    "id": "kanglish-normal-001",
+    "type": "sms",
+    "sender": "+91 99001 12345",
+    "text": "Macha naale sanje 7 ge Koramangala alli meet madona. Movie ticket naane book madtini, amele nange 450 GPay maadu.",
+    "lang": "kanglish",
+    "label": "normal",
+    "expectedLevel": "safe"
+  },
+  {
+    "id": "kn-normal-bescom-001",
+    "type": "sms",
+    "sender": "VM-BESCOM",
+    "text": "ಆತ್ಮೀಯ ಗ್ರಾಹಕರೇ, ನಿಮ್ಮ ಅಕ್ಟೋಬರ್ ತಿಂಗಳ ವಿದ್ಯುತ್ ಬಿಲ್ ಮೊತ್ತ ₹1,240. ಕೊನೆಯ ದಿನಾಂಕ 15-11-2026. ಪಾವತಿಗೆ ಅಧಿಕೃತ BESCOM Mithra ಆಪ್ ಬಳಸಿ.",
+    "lang": "kn",
+    "label": "normal",
+    "expectedLevel": "safe"
+  },
+  {
+    "id": "en-job-001",
+    "type": "email",
+    "sender": "amazon.hr.recruit@gmail.com",
+    "replyTo": "hr.desk.jobs@outlook.com",
+    "subject": "Congratulations! Selected for Amazon Work From Home",
+    "text": "Dear Candidate, you have been selected for the Amazon work-from-home Data Entry job. Earn Rs 5,000 per day. To confirm your joining, pay a refundable registration fee of Rs 1,999 to our HR UPI ID amazonhr.desk@ybl within 24 hours. Seats are limited.",
+    "lang": "en",
+    "label": "scam",
+    "scamType": "job",
+    "expectedLevel": "critical"
+  }
+]
